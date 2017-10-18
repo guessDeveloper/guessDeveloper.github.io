@@ -1,0 +1,93 @@
+
+# html lang
+language: en
+
+# seo优化
+seo:
+ keywords: "月魂的博客"
+ description: "前端工程师"
+
+# Miscelaneous
+favicon: /source/logo.png
+
+# head-bg 头像背景图 
+headbg: /images/header-bg.png
+# header 头像图 
+header: /images/header.jpg
+
+# post-header 标语部分
+post_header:
+  img: /images/coverpic.png
+  about:
+    - "月魂的博客"
+  url: "https://guessDeveloper.github.io"
+  visitor_front: "你是第"
+  visitor_back: "位访客"
+
+# 主配色
+blendent:
+  main: "#26A69A"
+
+#访客
+visitor: true
+
+#博客时间统计
+time: true
+#博客开启的时间 格式为：月/日/年 几点:几分:几秒
+begin_time: 1/1/2017 00:00:00
+
+#链接
+sns:
+    github: "https://github.com/guessDeveloper"
+    weibo: "http://example.com"
+    #zhihu: "http://example.com"
+    #twitter: "http://example.com"
+    email: "http://15932632612.@163com"
+
+#默认thumbnail图片的数目
+thumbnail: 19
+
+#nav
+sidebar:
+    homepage:
+        use: true
+    archives:
+        use: true
+    categories:
+        use: true
+    tags:
+        use: true
+    about:
+        use: false
+    friends:
+        use: false
+    photo:
+        use: false
+
+# Reading experience
+reading:
+    entry_excerpt: 180
+
+#photo page
+photo:
+    name: "影集名称"
+    about: "一段简介"
+
+#评论
+comment:
+    use: false
+    shortname: XXX.disqus.com
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /css/materialize.min.css
+  - /css/main.min.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/jquery-3.1.1.min.js
+  - /js/materialize.min.js
+  - /js/main.min.js
+
+
+
