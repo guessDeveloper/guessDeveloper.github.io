@@ -29,7 +29,7 @@ blendent:
   main: "#26A69A"
 
 #访客
-visitor: true
+visitor: false
 
 #博客时间统计
 time: true
@@ -75,8 +75,8 @@ photo:
 
 #评论
 comment:
-    use: false
-    shortname: XXX.disqus.com
+    use: true
+    shortname: https://guessdeveloper.github.io/
 
 # stylesheets loaded in the <head>
 stylesheets:
