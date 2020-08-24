@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="月魂的博客">
+  <meta name="description" content="前端工程师">
+  
+  <title>月影</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu"><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav">
+    <div class="nav-header" style="background-image: url(/images/header-bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.jpg" ondragstart="return false;"></div>
+    <p>Wang Ying</p>
+    <div class="nav-link">
+        
+        
+        <a href="https://github.com/guessDeveloper" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:http://15932632612.@163com"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off">
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class="no-result">无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/html/">html<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">5</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-16.png)">
+  <h2>浏览器的渲染</h2>
+    
+  <p>作者:Wang Ying &nbsp&nbsp 发布于:<time datetime="2017-10-25T09:29:56.000Z">
+          2017-10-25
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <p>看了一篇文章，说的是浏览器的渲染的过程及其原理，前端工作中许多工作都在对页面进行优化，每个优化的目的不同所需要的方案也不一样。所以了解浏览器渲染的原理及过程对一个前端来说重要性可想而知。</p>
+<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1508934122586&amp;di=68ff7e230d4561ec14ea460ae3231955&amp;imgtype=0&amp;src=http%3A%2F%2Fstatic.leiphone.com%2Fuploads%2F2011%2F06%2Fcommon-web-browsers-and-browser1.jpeg" alt="浏览器"></p>
+<h5 id="关键渲染路径"><a href="#关键渲染路径" class="headerlink" title="关键渲染路径"></a>关键渲染路径</h5><blockquote>
+<p>关键渲染路径(Critical Rendering Path) 是指与用户当前操作相关的内容。例如用户刚刚打开一个界面，首屏的显示就是当前用户操作相关的内容，具体就是浏览器收到HTML、CSS和JavaScript等资源对其进行处理从而渲染出Web页面。<br>了解浏览器的渲染也是为了优化关键渲染路径。优化是针对具体问题的解决方案。所以优化没有准确的规定。</p>
+</blockquote>
+<h5 id="浏览器渲染页面的过程"><a href="#浏览器渲染页面的过程" class="headerlink" title="浏览器渲染页面的过程"></a>浏览器渲染页面的过程</h5><p>浏览器请求、加载、渲染一个页面总共做了5件事情。</p>
+<ol>
+<li>DNS查询</li>
+<li>TCP链接</li>
+<li>HTTP请求即响应</li>
+<li>服务器响应</li>
+<li>客户端渲染</li>
+</ol>
+<p>我们今天主要讨论的是客户端渲染，而其又分为5步。</p>
+<ol>
+<li>处理HTML标记并构建DOM树。</li>
+<li>处理CSS标记并构建CSSOM树。</li>
+<li>将DOM与CSSOM合并成一个渲染树。</li>
+<li>根据渲染树来布局，移计算每个节点的几何信息。</li>
+<li>将各个节点绘制在屏幕上。</li>
+</ol>
+<p>但是呢，这5步不是一次性顺序完成的。如果有DOM或者CSSOM被修改，以上过程需要重复执行，这样才能计算出哪些像素需要在屏幕上进行重新渲染。在实际中，css与JavaScript往往多次修改DOM和CSSOM。</p>
+<h5 id="阻塞渲染：CSS与JavaScript"><a href="#阻塞渲染：CSS与JavaScript" class="headerlink" title="阻塞渲染：CSS与JavaScript"></a>阻塞渲染：CSS与JavaScript</h5><p>提到资源阻塞，我们要明白一点，现在的浏览器是并行加载资源的。例如当HTML解析器（HTML Parser）被脚步阻塞时，解析器虽然会停止构建DOM,但仍会识别该脚步后面的资源，并进行预加载。<br>同时，由于下面两点：</p>
+<ol>
+<li>默认情况下，CSS被视为阻塞渲染的资源，这意味着浏览器将不会渲染任何已处理的内容，直至CSSOM构建完毕。</li>
+<li>JavaScript不仅可以读取和修改DOM属性，还可以读取和修改CSSOM属性。</li>
+</ol>
+<p>存在阻塞的CSS资源时，浏览器会延迟javascript的执行和DOM构建。另外：</p>
+<ol>
+<li>当浏览器遇到一个script标签时,DOM构建将暂停，直至脚步完成执行。</li>
+<li>JavaScript可以查询和修改DOM与CSSOM。</li>
+<li>CSSOM构建时，JavaScript执行将暂停，直至CSSOM就绪。</li>
+</ol>
+<p>所以，script的位置很重要。实际中，遵循以下规则。</p>
+<ol>
+<li>CSS优先：引入顺序上，CSS资源优先于JavaScript资源。</li>
+<li>JavaScript尽量减少DOM操作。</li>
+</ol>
+<h5 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;p&#123;color:red;&#125;&lt;/style&gt;</span><br><span class="line">&lt;link rel=&apos;stylesheet&apos; href=&apos;index.css&apos;&gt;</span><br></pre></td></tr></table></figure>
+<p>这样的link标签会被视为阻塞渲染的资源，浏览器会优先处理这些CSS资源，直至CSSOM构建完成。<br>渲染树（Render-Tree）的关键渲染路径中，要求同时具有CSSOM和DOM,之后才构建渲染树。也就是说CSS和HTML都是阻塞资源，但是HTML是必须的，所以我们想做优化只能从CSS上想办法。</p>
+
+  </div>
+  <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="https://guessdeveloper.github.io/"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/2017/11/06/前端网络安全/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2017/10/24/生活意义/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#关键渲染路径"><span class="post-toc-number">1.</span> <span class="post-toc-text">关键渲染路径</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#浏览器渲染页面的过程"><span class="post-toc-number">2.</span> <span class="post-toc-text">浏览器渲染页面的过程</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#阻塞渲染：CSS与JavaScript"><span class="post-toc-number">3.</span> <span class="post-toc-text">阻塞渲染：CSS与JavaScript</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#CSS"><span class="post-toc-number">4.</span> <span class="post-toc-text">CSS</span></a></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p>Copyright ©  2017  月影</p>
+<!--<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>-->
+<p style="font-size: 10px" id="footer-times" data-time="1/1/2017 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
