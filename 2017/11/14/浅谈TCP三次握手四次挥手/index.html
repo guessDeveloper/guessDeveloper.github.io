@@ -119,17 +119,79 @@
 <div id="content-outer">
   <div id="content-inner">
     
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-4.png)">
+  <h2>浅谈TCP（三次握手四次挥手）</h2>
+    
+  <p>作者:Wang Ying &nbsp&nbsp 发布于:<time datetime="2017-11-14T08:44:29.000Z">
+          2017-11-14
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <p>在浏览器网址输入点击回车后有哪些操作？相信很多同学在大厂面试的时候都会问这个问题，那这个问题往往就绕不开TCP链接。</p>
+<h4 id="为什么会有TCP？"><a href="#为什么会有TCP？" class="headerlink" title="为什么会有TCP？"></a>为什么会有TCP？</h4><p>在世界上各地，各种各样的电脑运行着各自不同的操作系统为大家服务，这些电脑在表达同一种信息的时候所使用的方法是千差万别。就好像圣经中上帝打乱了各地人的口音，让他们无法合作一样。计算机使用者意识到，计算机只是单兵作战并不会发挥太大的作用。只有把它们联合起来，电脑才会发挥出它最大的潜力。于是人们就想方设法的用电线把电脑连接到了一起。</p>
+<p>但是简单的连到一起是远远不够的，就好像语言不同的两个人互相见了面，完全不能交流信息。因而他们需要定义一些共通的东西来进行交流，TCP/IP就是为此而生。TCP/IP不是一个协议，而是一个协议族的统称。里面包括了IP协议，IMCP协议，TCP协议，以及我们更加熟悉的http、ftp、pop3协议等等。电脑有了这些，就好像学会了外语一样，就可以和其他的计算机终端做自由的交流了。</p>
+<h4 id="TCP-IP协议分层"><a href="#TCP-IP协议分层" class="headerlink" title="TCP/IP协议分层"></a>TCP/IP协议分层</h4><p><img src="https://img2018.cnblogs.com/blog/1330623/201811/1330623-20181111094255969-906399626.png" alt="TCP分层2.jpg"></p>
+<h6 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h6><p>向用户提供一组常用的应用程序，比如电子邮件、文件传输访问、远程登录等。远程登录TELNET使用TELNET协议提供在网络其它主机上注册的接口。TELNET会话提供了基于字符的虚拟终端。文件传输访问FTP使用FTP协议来提供网络内机器间的文件拷贝功能。</p>
+<h6 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h6><p>提供应用程序间的通信。其功能包括：一、格式化信息流；二、提供可靠传输。为实现后者，传输层协议规定接收端必须发回确认，并且假如分组丢失，必须重新发送。</p>
+<h6 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h6>
+  </div>
+  <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="https://guessdeveloper.github.io/"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/2017/11/14/前段安全问题二/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
 
 
-<div class="tags">
-  
-    <div id="archive">
-        
-          <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/">es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js-es6/">js es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/新的开始/">新的开始</a></li></ul>
-        
-    </div>
-  
-
+  <!-- Next Nav -->
+    
+  <a href="/2017/11/06/前端网络安全/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#为什么会有TCP？"><span class="post-toc-number">1.</span> <span class="post-toc-text">为什么会有TCP？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TCP-IP协议分层"><span class="post-toc-number">2.</span> <span class="post-toc-text">TCP/IP协议分层</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#应用层"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">应用层</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#传输层"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">传输层</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#网络层"><span class="post-toc-number">2.0.3.</span> <span class="post-toc-text">网络层</span></a></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
   </div>
 </div>
 <div id="bottom-outer">
@@ -197,5 +259,5 @@
         });
 </script>
 
-</div></body>
+</body>
 </html>

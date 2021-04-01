@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="月魂的博客">
+  <meta name="description" content="前端工程师">
+  
+  <title>月影</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu"><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav">
+    <div class="nav-header" style="background-image: url(/images/header-bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.jpg" ondragstart="return false;"></div>
+    <p>Wang Ying</p>
+    <div class="nav-link">
+        
+        
+        <a href="https://github.com/guessDeveloper" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:http://15932632612.@163com"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off">
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class="no-result">无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2020/10/">October 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">3</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/html/">html<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">5</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-16.png)">
+  <h2>前端十大经典算法</h2>
+    
+  <p>作者:Wang Ying &nbsp&nbsp 发布于:<time datetime="2020-10-25T09:29:56.000Z">
+          2020-10-25
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <p>现在大厂面试对前端算法要求也比较高，这里总结一下比较常见的经典算法可以加深学习印象</p>
+<h5 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h5><p>冒泡排序是经常会问到的一种排序算法，算法的复杂程度比较低</p>
+<h6 id="算法描述"><a href="#算法描述" class="headerlink" title="算法描述"></a>算法描述</h6><p>1、比较相邻元素的大小，并交换位置比较相邻的元素。如果第一个比第二个大，就交换它们两个<br>2、对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对，这样在最后的元素应该会是最大的数<br>3、针对所有的元素重复以上的步骤，除了最后一个<br>4、重复步骤1~3，直到排序完成</p>
+<h6 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function buble(arr)&#123;</span><br><span class="line">  for (var i = 0; i &lt; arr.length;i++) &#123;</span><br><span class="line">    for (var j = 0; j &lt; arr.length-i-1; j++) &#123;</span><br><span class="line">        if (arr[j] &gt; arr[j+1]) &#123;</span><br><span class="line">            var tamp = arr[j]</span><br><span class="line">            arr[j] = arr[j+1]</span><br><span class="line">            arr[j+1] = tamp</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return arr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>附带大神做的动图 <img src="https://image-static.segmentfault.com/116/807/116807884-57dcd3a8c4bf4_articlex" alt="冒泡排序"></p>
+<h5 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h5><p>第一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，然后再从剩余的未排序元素中寻找到最小（大）元素，然后放到已排序的序列的末尾。以此类推，直到全部待排序的数据元素的个数为零。选择排序是不稳定的排序方法。</p>
+<h6 id="算法描述-1"><a href="#算法描述-1" class="headerlink" title="算法描述"></a>算法描述</h6><p>n个记录的直接选择排序可经过n-1趟直接选择排序得到有序结果。具体算法描述如下：</p>
+<p>1、初始状态：无序区为R[1..n]，有序区为空；<br>2、第i趟排序(i=1,2,3…n-1)开始时，当前有序区和无序区分别为R[1..i-1]和R(i..n）。该趟排序从当前无序区中-选出关键3、字最小的记录 R[k]，将它与无序区的第1个记录R交换，使R[1..i]和R[i+1..n)分别变为记录个数增加1个的新有序区和记录个数减少1个的新无序区；<br>4、n-1趟结束，数组有序化了。<br>选择排序是大部分人能到到最多的排序方法，属于最稳定的排序方法之一，在数据量比较小的时候可以使用，</p>
+<h6 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function selectionSort(arr)&#123;</span><br><span class="line">  for(var i = 0;i&lt;arr.length;i++)&#123;</span><br><span class="line">    for(var j = i+1;j&lt;arr.length;j++)&#123;</span><br><span class="line">      if(arr[j]&lt;arr[i])&#123; //找到最小值</span><br><span class="line">        let tamp = arr[i]</span><br><span class="line">        arr[i] = arr[j]</span><br><span class="line">        arr[j] = tamp</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return arr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>附带大神做的动图 <img src="https://image-static.segmentfault.com/248/329/2483292318-57dcd3a54075f_fix732" alt="选择排序"></p>
+<h5 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h5><p>insertion-sort 它的工作原理是通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。</p>
+<h6 id="算法描述-2"><a href="#算法描述-2" class="headerlink" title="算法描述"></a>算法描述</h6><p>1、从第一个元素开始，该元素可以认为已经被排序；<br>2、取出下一个元素，在已经排序的元素序列中从后向前扫描；<br>3、如果该元素（已排序）大于新元素，将该元素移到下一位置；<br>4、重复步骤3，直到找到已排序的元素小于或者等于新元素的位置；<br>5、将新元素插入到该位置后；<br>6、重复步骤2~5。</p>
+<h6 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">fucntion insetionSort(arr)&#123;</span><br><span class="line">  var preIndex,current</span><br><span class="line">  for(var i= 0;i&lt;arr.length;i++)&#123;</span><br><span class="line">    preIndex = i-1</span><br><span class="line">    current = arr[i]</span><br><span class="line">    while(preIndex&gt;0&amp;&amp;arr[preIndex]&gt;current)&#123;</span><br><span class="line">       arr[preIndex+1] = arr[preIndex]</span><br><span class="line">       preIndex--</span><br><span class="line">    &#125;</span><br><span class="line">    arr[preIndex +1] = current</span><br><span class="line">  &#125;</span><br><span class="line">  return arr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>附带大神做的动图 <img src="https://image-static.segmentfault.com/148/741/1487416282-57dcd3a490cb3_fix732" alt="插入排序"></p>
+<h6 id="算法描述-3"><a href="#算法描述-3" class="headerlink" title="算法描述"></a>算法描述</h6><p>插入排序在实现上，通常采用in-place排序（即只需用到O(1)的额外空间的排序），因而在从后向前扫描过程中，需要反复把已排序元素逐步向后挪位，为最新元素提供插入空间。</p>
+<h5 id="希尔排序-shell-Sort"><a href="#希尔排序-shell-Sort" class="headerlink" title="希尔排序 shell Sort"></a>希尔排序 shell Sort</h5><p>1959年Shell发明，第一个突破O(n2)的排序算法，是简单插入排序的改进版。它与插入排序的不同之处在于，它会优先比较距离较远的元素。希尔排序又叫缩小增量排序。(说实话这个是真没看懂，59年的算法看来起来跟拉菲一样牛批)</p>
+<h6 id="算法描述-4"><a href="#算法描述-4" class="headerlink" title="算法描述"></a>算法描述</h6><p>选择一个增量序列t1，t2，…，tk，其中ti&gt;tj，tk=1；<br>按增量序列个数k，对序列进行k 趟排序；<br>每趟排序，根据对应的增量ti，将待排序列分割成若干长度为m 的子序列，分别对各子表进行直接插入排序。仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。</p>
+<h6 id="代码实现-3"><a href="#代码实现-3" class="headerlink" title="代码实现"></a>代码实现</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function shellSort(arr)&#123;</span><br><span class="line">  var len = arr.length,</span><br><span class="line">  temp,</span><br><span class="line">  gap=1;</span><br><span class="line">  while(gab&lt;len/3)&#123;</span><br><span class="line">    gap=gap*3+1</span><br><span class="line">  &#125;</span><br><span class="line">  for(gap;gap&gt;0;gap=Math.floor(gap/3))&#123;</span><br><span class="line">    for(var i = gap;i&lt;len;i++)&#123;</span><br><span class="line">      temp= arr[i];</span><br><span class="line">      for(var j = i-gap;j&gt;0&amp;&amp;arr[j]&gt;temp;j-=gap)&#123;</span><br><span class="line">        arr[j+gap] = arr[j]</span><br><span class="line">      &#125;</span><br><span class="line">      arr[j+gap] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return arr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h6><p>希尔排序的核心在于间隔序列的设定。既可以提前设定好间隔序列，也可以动态的定义间隔序列。动态定义间隔序列的算法是《算法（第4版）》的合著者Robert Sedgewick提出的。　</p>
+<p>附带大神做的动图<br><img src="https://image-static.segmentfault.com/737/484/737484782-5ad60f6ad03e6_fix732" alt="希尔排序"></p>
+<h5 id="归并算法（Merge-sort）"><a href="#归并算法（Merge-sort）" class="headerlink" title="归并算法（Merge sort）"></a>归并算法（Merge sort）</h5><p>归并排序是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divde and Conquer)的一个非常经典的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，成2-路归并。</p>
+<h6 id="算法描述-5"><a href="#算法描述-5" class="headerlink" title="算法描述"></a>算法描述</h6><p>把长度为n的输入序列分成两个长度为n/2的子序列<br>对这两个子序列分别采用归并排序<br>将两个排序好的子序列合并成一个最终的排序序列</p>
+<h6 id="代码实现-4"><a href="#代码实现-4" class="headerlink" title="代码实现"></a>代码实现</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">function mergeSort(arr)&#123;</span><br><span class="line">  var len = arr.length</span><br><span class="line">  if(len&lt;1)&#123;</span><br><span class="line">    return arr</span><br><span class="line">  &#125;</span><br><span class="line">  var middle = Math.floor(len/2)</span><br><span class="line">  var left = arr.slice(0,middle)</span><br><span class="line">  var right = arr.slice(middle)</span><br><span class="line">  return meger(mergeSort(left),mergeSort(right))</span><br><span class="line">&#125;</span><br><span class="line">function meger(left,right)&#123;</span><br><span class="line">   var result = []</span><br><span class="line">   if(left.length&gt;0&amp;&amp;right.length&gt;0)&#123;</span><br><span class="line">     if(left[0]&lt;=right[0])&#123;</span><br><span class="line">       result.push(left.shift())</span><br><span class="line">     &#125;else&#123;</span><br><span class="line">       result.push(right.shift())</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   while(left.length)&#123;</span><br><span class="line">     result.push(left.shift())</span><br><span class="line">   &#125;</span><br><span class="line">   while(right.length)&#123;</span><br><span class="line">     reuslt.push(right.shift())</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="算法分析-1"><a href="#算法分析-1" class="headerlink" title="算法分析"></a>算法分析</h6><p>归并排序是一种稳定的排序方法。和选择排序一样，归并排序的性能不受输入数据的影响，但表现比选择排序好的多，因为始终都是O(nlogn）的时间复杂度。代价是需要额外的内存空间。</p>
+<p>附带大神做的动图 <img src="https://image-static.segmentfault.com/334/624/3346244490-57dcd3a4bbfdc_fix732" alt="归并排序"></p>
+<h5 id="快速排序（Quick-sort）"><a href="#快速排序（Quick-sort）" class="headerlink" title="快速排序（Quick sort）"></a>快速排序（Quick sort）</h5><p>快速排序的基本思想：通过一趟排序将待排记录分隔成独立的两部分,其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。</p>
+<h6 id="算法描述-6"><a href="#算法描述-6" class="headerlink" title="算法描述"></a>算法描述</h6><p>快速排序使用分治法把一串（list）分成两个子串（sub-lists）。具体算法描述如下</p>
+<ul>
+<li>从数列中挑出一个元素，成为基准（pivot）</li>
+<li>重新排序数列，所有元素比基准值小的摆放在基准值前面，所有元素比基准值大的摆放在基准的后面（相同的数可以到任意一边）。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区操作（partition）</li>
+<li>递归地（recusive）把小于基准值的元素的子数列和大于基准值的子数序列排序。<h6 id="代码实现-5"><a href="#代码实现-5" class="headerlink" title="代码实现"></a>代码实现</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">function quickSort(arr,left,right)&#123;</span><br><span class="line">  var len = arr.length</span><br><span class="line">  var low = typeof left != &apos;number&apos;?0:left</span><br><span class="line">  var high = typeof right != &apos;number&apos;:len-1:right</span><br><span class="line">  var preIndex</span><br><span class="line">  if(low&lt;high)&#123;</span><br><span class="line">    preIndex = partation(arr,low,high)</span><br><span class="line">    quickSort(arr,low,preIndex-1)</span><br><span class="line">    quickSort(arr,preIndex+1,right)</span><br><span class="line">  &#125;</span><br><span class="line">  return arr</span><br><span class="line">&#125;</span><br><span class="line">//分区操作</span><br><span class="line">function partation(arr,left,right)&#123;</span><br><span class="line">  var p = left //设定基准值</span><br><span class="line">  var index = p+1</span><br><span class="line">  for(i= index;i&lt;=right;i++)&#123;</span><br><span class="line">    if(arr[i]&lt;arr[p])&#123;</span><br><span class="line">      swap(arr,i,index)</span><br><span class="line">      index++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  swap(arr,p,index-1)</span><br><span class="line">  return index-1</span><br><span class="line">&#125;</span><br><span class="line">function swap(arr,i,j)&#123;</span><br><span class="line">   var tamp = arr[i]</span><br><span class="line">   arr[i] = arr[j]</span><br><span class="line">   arr[j] = tamp</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="计数排序（counting-Sort）"><a href="#计数排序（counting-Sort）" class="headerlink" title="计数排序（counting Sort）"></a>计数排序（counting Sort）</h4><p>计数排序不是基于比较的排序算法，其核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。 作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。</p>
+<h5 id="算法描述-7"><a href="#算法描述-7" class="headerlink" title="算法描述"></a>算法描述</h5><ul>
+<li>找出待排序的数组中最大和最小的元素</li>
+<li>统计数组中每个值为i的元素出现的次数，存入数组C的第i项；</li>
+<li>对所有的计数累加（从C中的第一个元素开始，每一项和前一项相加）；</li>
+<li>反向填充目标数组：将每个元素i放在新数组的第C(i)项，每放一个元素就将C(i)减去1。</li>
+</ul>
+<p>附带大神做的动图 <img src="https://image-static.segmentfault.com/382/394/3823945659-57dcd3a59130c_fix732" alt="计数排序"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">function countingSort(arr,maxValue)&#123;</span><br><span class="line">   var buryArr = new Array(maxValue+1)</span><br><span class="line">   var len = arr.length</span><br><span class="line">   var uArr = []</span><br><span class="line">   var index = 0</span><br><span class="line">   for(var i = 0;i&lt;len;i++)&#123;</span><br><span class="line">     if(!buryArr[arr[i]])&#123;</span><br><span class="line">       buryArr[arr[i]] = 0</span><br><span class="line">     &#125;</span><br><span class="line">     buryArr[arr[i]]++</span><br><span class="line">   &#125;</span><br><span class="line">   for(var j =0;j&lt;buryArr.length;j++)&#123;</span><br><span class="line">     while(buryArr[j]&gt;0)&#123;</span><br><span class="line">       uArr.push(index++)</span><br><span class="line">       buryArr[j]--</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   return uArr</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+  </div>
+  <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="https://guessdeveloper.github.io/"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2020/08/24/vue-cli3.0包体积分析（一）/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#冒泡排序"><span class="post-toc-number">1.</span> <span class="post-toc-text">冒泡排序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">算法描述</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#代码实现"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">代码实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#选择排序"><span class="post-toc-number">2.</span> <span class="post-toc-text">选择排序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述-1"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">算法描述</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#代码实现-1"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">代码实现</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#插入排序"><span class="post-toc-number">3.</span> <span class="post-toc-text">插入排序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述-2"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">算法描述</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#代码实现-2"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">代码实现</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述-3"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">算法描述</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#希尔排序-shell-Sort"><span class="post-toc-number">4.</span> <span class="post-toc-text">希尔排序 shell Sort</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述-4"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">算法描述</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#代码实现-3"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">代码实现</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法分析"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">算法分析</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#归并算法（Merge-sort）"><span class="post-toc-number">5.</span> <span class="post-toc-text">归并算法（Merge sort）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述-5"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">算法描述</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#代码实现-4"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">代码实现</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法分析-1"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">算法分析</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#快速排序（Quick-sort）"><span class="post-toc-number">6.</span> <span class="post-toc-text">快速排序（Quick sort）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#算法描述-6"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">算法描述</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#代码实现-5"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">代码实现</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#计数排序（counting-Sort）"><span class="post-toc-number"></span> <span class="post-toc-text">计数排序（counting Sort）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#算法描述-7"><span class="post-toc-number">1.</span> <span class="post-toc-text">算法描述</span></a></li></ol>
+</li></div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p>Copyright ©  2017  月影</p>
+<!--<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>-->
+<p style="font-size: 10px" id="footer-times" data-time="1/1/2017 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>
