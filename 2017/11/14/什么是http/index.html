@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <meta name="keywords" content="月魂的博客">
+  <meta name="description" content="前端工程师">
+  
+  <title>月影</title>
+  
+    <!-- stylesheets list from config.yml -->
+    
+      <link rel="stylesheet" href="/css/materialize.min.css">
+    
+      <link rel="stylesheet" href="/css/main.min.css">
+    
+  
+  <style type="text/css">
+      html{
+          font-family: sans-serif;
+          font-weight: 300;
+      }
+      @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(/fonts/MaterialIcons-Regular.eot);
+          src: url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+          url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+          url(/fonts/MaterialIcons-Regular.ttf) format('truetype')
+      }
+  </style>
+</head>
+<body>
+<div id="menu-box"><a href="javascript:void(0)" id="menu" data-activates="slide-out" class="button-collapse menu"><span class="nav-btn"></span></a></div>
+<div id="menu-outer">
+  <div id="menu-inner">
+      <ul id="slide-out" class="side-nav">
+    <div class="nav-header" style="background-image: url(/images/header-bg.png);background-color:#26A69A">
+    <div class="header-box"><img src="/images/header.jpg" ondragstart="return false;"></div>
+    <p>Wang Ying</p>
+    <div class="nav-link">
+        
+        
+        <a href="https://github.com/guessDeveloper" target="_blank"><div class="link-box github"></div></a>
+        
+        
+        <a href="mailto:http://15932632612.@163com"><div class="link-box email"></div></a>
+        
+        
+        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
+        
+        
+    </div>
+    <div class="nav-search">
+        <form id="search-form"> <!-- 搜索框相关 -->
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="search form-control" autocomplete="off" autocorrect="off">
+            <div class="nav-search-img"><i class="material-icons">search</i></div>
+        </form>
+        <div id="local-search-result"></div> <!-- 搜索结果区 -->
+        <p class="no-result">无搜索结果</p>
+    </div>
+</div>
+    <!--Homepage-->
+
+<li class="nav-list">
+    <a href="/" target="_self">
+        <div class="nav-ico"><i class="material-icons">home</i> </div><p>主页</p>
+    </a>
+</li>
+
+<!--archives-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">assignment</i></div><p>归档</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="archive-link" href="/archives/2021/06/">June 2021<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/10/">October 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/10/">October 2018<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">4</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
+    </li>
+</ul>
+<!--categories-->
+
+<li class="nav-list dropdown-btn">
+    <a class target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
+<ul class="dropdown-menu dropdown">
+    <li class="nav-dropdown-list">
+        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/网络/">网络<span class="category-count">8</span></a>
+    </li>
+</ul>
+<!--tags-->
+
+<li class="nav-list">
+    <a href="/archives" target="_self">
+        <div class="nav-ico"><i class="material-icons">bookmark</i> </div><p>标签</p>
+    </a>
+</li>
+
+<!--photo-->
+
+<!--friends-->
+
+<!--about-->
+
+
+</ul>
+
+  </div>
+</div>
+
+<div id="content-outer">
+  <div id="content-inner">
+    
+<article id="post">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-5.png)">
+  <h2>什么是http</h2>
+    
+  <p>作者:Wang Ying &nbsp&nbsp 发布于:<time datetime="2017-11-14T08:44:29.000Z">
+          2017-11-14
+    </time>
+  </p>
+    
+  </div>
+  <div class="post-page-content">
+  <h1 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h1><p>HTTP 是 Hyper Text Transfer Protocol（超文本传输协议）的缩写。它是一个应用层协议，由请求和响应构成，是一个标准的客户端服务器模型。HTTP 是一个无状态的协议。</p>
+<h3 id="HTTP-协议的特点"><a href="#HTTP-协议的特点" class="headerlink" title="HTTP 协议的特点"></a>HTTP 协议的特点</h3><p>1.简单快速：客户向服务器请求服务时，只需传送请求方法和路径。请求方法常用的有GET、HEAD、PUT、DELETE、POST。每种方法规定了客户与服务器联系的类型不同。由于HTTP协议简单，使得HTTP服务器的程序规模小，因而通信速度很快。</p>
+<p>2.灵活：HTTP允许传输任意类型的数据对象。</p>
+<p>3.无连接：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。</p>
+<p>4.无状态：<strong>HTTP协议是无状态的，HTTP 协议自身不对请求和响应之间的通信状态进行保存。任何两次请求之间都没有依赖关系。</strong>直观地说，就是每个请求都是独立的，与前面的请求和后面的请求都是没有直接联系的。协议本身并不保留之前一切的请求或 响应报文的信息。这是为了更快地处理大量事务，确保协议的可伸缩性，而特意把 HTTP 协议设计成如此简单的。</p>
+<h3 id="请求报文"><a href="#请求报文" class="headerlink" title="请求报文"></a>请求报文</h3><ul>
+<li>请求行<ul>
+<li>请求类型</li>
+<li>要访问的资源</li>
+<li>HTTP 协议版本号</li>
+</ul>
+</li>
+<li>请求头<ul>
+<li>用来说明服务器要使用的附加信息（一些键值对）</li>
+<li>例如：User-Agent、 Accept、Content-Type、Connection</li>
+</ul>
+</li>
+<li>空行<ul>
+<li>分割请求头与请求体</li>
+</ul>
+</li>
+<li>请求体<ul>
+<li>可以添加任意的其他数据</li>
+</ul>
+</li>
+</ul>
+<h3 id="响应报文"><a href="#响应报文" class="headerlink" title="响应报文"></a>响应报文</h3><ul>
+<li>状态行<ul>
+<li>状态码</li>
+<li>状态消息</li>
+<li>HTTP 协议版本号</li>
+</ul>
+</li>
+<li>消息报头<ul>
+<li>说明客户端要使用的一些附加信息</li>
+<li>如：Content-Type、charset、响应的时间</li>
+</ul>
+</li>
+<li>响应正文<ul>
+<li>返回给客户端的文本信息</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h3><ul>
+<li>GET<ul>
+<li>获取资源</li>
+</ul>
+</li>
+<li>POST<ul>
+<li>传输资源</li>
+</ul>
+</li>
+<li>PUT<ul>
+<li>更新资源</li>
+</ul>
+</li>
+<li>DELETE<ul>
+<li>删除资源</li>
+</ul>
+</li>
+<li><p>HEAD</p>
+<ul>
+<li><p>获取报文首部<br>OPTIONS：返回服务器针对特定资源所支持的 HTTP 请求方法。也可以利用向 Web 服务器发送’*’的请求来测试服务器的功能性。<br>HEAD：向服务器索要与 GET 请求相一致的响应，只不过响应体将不会被返回。这一方法可以在不必传输整个响应内容的情况下，就可以获取包含在响应消息头中的元信息。<br>GET：向特定的资源发出请求。<br>POST：向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST 请求可能会导致新的资源的创建和/或已有资源的修改。<br>PUT：用于向服务器发送请求，如果 URI 不存在，则要求服务器根据请求创建资源，如果存在，服务器就接受请求内容，并修改 URI 的原始版本<br>DELETE：请求服务器删除 Request-URI 所标识的资源。<br>TRACE：回显服务器收到的请求，主要用于测试或诊断。<br>CONNECT：HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器。</p>
+<p>options请求<br>官方定义：<br>options方法用于请求获得由request-URI标识的资源在请求/响应的通信过程中可以使用的功能选项。通过这个方法，客户端可以在采取具体资源请求之前，决定对该资源采取何种必要措施，或了解服务器的性能。<br>主要用途：</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>获取服务器支持的HTTP请求方法；</li>
+<li>用来检车服务器的性能，例如，进行AJAX跨域请求时的预检，需要向另一个域名的资源发送一个HTTP options 请求头，用以判断实际发送的请求是否安全。</li>
+</ol>
+<h3 id="Post-和-Get-的区别"><a href="#Post-和-Get-的区别" class="headerlink" title="Post 和 Get 的区别"></a>Post 和 Get 的区别</h3><ul>
+<li>GET 在浏览器回退时是无害的，而 POST 会再次提交</li>
+<li>Get 请求能缓存，Post 不能</li>
+<li>Post 相对 Get 相对安全一些，因为 Get 请求都包含在 URL 中，而且会被浏览器保存记录，Post 不会。但是再抓包的情况下都是一样的。</li>
+<li>Post 可以通过 request body 来传输比 Get 更多的数据</li>
+<li>URL 有长度限制，会影响 Get 请求，但是这个长度限制是浏览器规定的</li>
+<li>Post 支持更多的编码类型且不对数据类型限制</li>
+<li>POST，浏览器先发送 header，服务器响应 100 continue，浏览器再发送 data，服务器响应 200 ok(返回数据)</li>
+</ul>
+<p>先引入副作用和幂等的概念。<br>副作用指对服务器上的资源做改变，搜索是无副作用的，注册是副作用的。<br>幂等指发送 M 和 N 次请求（两者不相同且都大于 1），服务器上资源的状态一致，比如注册 10 个和 11 个帐号是不幂等的，对文章进行更改 10 次和 11 次是幂等的。<br>在规范的应用场景上说，Get 多用于无副作用，幂等的场景，例如搜索关键字。Post 多用于副作用，不幂等的场景，例如注册。</p>
+<h3 id="常见状态码"><a href="#常见状态码" class="headerlink" title="常见状态码"></a>常见状态码</h3><h4 id="1XX-指示信息"><a href="#1XX-指示信息" class="headerlink" title="1XX 指示信息"></a>1XX 指示信息</h4><p>表示请求已接收，继续处理</p>
+<h4 id="2XX-成功"><a href="#2XX-成功" class="headerlink" title="2XX 成功"></a>2XX 成功</h4><ul>
+<li><strong>200</strong> OK</li>
+<li>204 No content，表示请求成功，但响应报文不含实体的主体部分</li>
+<li>205 Reset Content，表示请求成功，但响应报文不含实体的主体部分，但是与 204 响应不同在于要求请求方重置内容</li>
+<li><strong>206</strong> Partial Content，进行范围请求</li>
+</ul>
+<h4 id="3XX-重定向"><a href="#3XX-重定向" class="headerlink" title="3XX 重定向"></a>3XX 重定向</h4><ul>
+<li><strong>301</strong> 永久性重定向，表示资源已被分配了新的 URL</li>
+<li><strong>302</strong> 临时性重定向，表示资源临时被分配了新的 URL</li>
+<li>303 表示资源存在着另一个 URL，应使用 GET 方法获取资源</li>
+<li><strong>304</strong> 未修改，重定位到浏览器。自从上次请求后，请求的网页未修改过。服务器返回此响应时，不会返回网页内容。如果网页自请求者上次请求后再也没有更改过，您应将服务器配置为返回此响应（称为 If-Modified-Since HTTP 标头）。服务器可以告诉 Googlebot 自从上次抓取后网页没有变更，进而节省带宽和开销。</li>
+<li>307 临时重定向，和 302 含义类似，但是期望客户端保持请求方法不变向新的地址发出请求</li>
+</ul>
+<h4 id="4XX-客户端错误"><a href="#4XX-客户端错误" class="headerlink" title="4XX 客户端错误"></a>4XX 客户端错误</h4><ul>
+<li><strong>404</strong> 在服务器上没有找到请求的资源</li>
+<li><strong>403</strong> forbidden，表示对请求资源的访问被服务器拒绝</li>
+<li>400 请求报文存在语法错误</li>
+<li>401 表示发送的请求需要有通过 HTTP 认证的认证信息</li>
+</ul>
+<h4 id="5XX-服务器错误"><a href="#5XX-服务器错误" class="headerlink" title="5XX 服务器错误"></a>5XX 服务器错误</h4><ul>
+<li><strong>500</strong> 表示服务器端在执行请求时发生了错误</li>
+<li>501 表示服务器不支持当前请求所需要的某个功能</li>
+<li><strong>503</strong> 表明服务器暂时处于超负载或正在停机维护，无法处理请求 </li>
+</ul>
+<h3 id="HTTP-持久连接（HTTP1-1-支持）"><a href="#HTTP-持久连接（HTTP1-1-支持）" class="headerlink" title="HTTP 持久连接（HTTP1.1 支持）"></a>HTTP 持久连接（HTTP1.1 支持）</h3><p>HTTP 协议采用“请求-应答”模式，并且 HTTP 是基于 TCP 进行连接的。普通模式（非 keep-alive）时，每个请求或应答都需要建立一个连接，完成之后立即断开。</p>
+<p>当使用<code>Conection: keep-alive</code>模式（又称持久连接、连接重用）时，keep-alive 使客户端道服务器端连接持续有效，即不关闭底层的 TCP 连接，当出现对服务器的后继请求时，keep-alive 功能避免重新建立连接。</p>
+<h3 id="HTTP-管线化-（HTTP1-1-支持）"><a href="#HTTP-管线化-（HTTP1-1-支持）" class="headerlink" title="HTTP 管线化 （HTTP1.1 支持）"></a>HTTP 管线化 （HTTP1.1 支持）</h3><p><img src="/images/md/pipe.png" alt="pipe"></p>
+<p>管线化后，请求和响应不再是依次交替的了。他可以支持一次性发送多个请求，并一次性接收多个响应。</p>
+<ul>
+<li>只有 get 与 head 请求可以进行管线化，POST 有限制</li>
+<li>初次创建连接时不应该启动管线机制，因为服务器不一定支持该协议</li>
+</ul>
+<h3 id="HTTP-数据协商"><a href="#HTTP-数据协商" class="headerlink" title="HTTP 数据协商"></a>HTTP 数据协商</h3><p>在客户端向服务端发送请求的时候，客户端会申明可以接受的数据格式和数据相关的一些限制是什么样的；服务端在接受到这个请求时他会根据这个信息进行判断到底返回怎样的数据。</p>
+<h4 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h4><ul>
+<li>Accept<ul>
+<li>在请求中使用 Accept 可申明想要的数据格式</li>
+</ul>
+</li>
+<li>Accept-Encoding<ul>
+<li>告诉服务端使用什么的方式来进行压缩</li>
+<li>例如：gzip、deflate、br</li>
+</ul>
+</li>
+<li>Accept-Language<ul>
+<li>描述语言信息</li>
+</ul>
+</li>
+<li>User-Agent<ul>
+<li>用来描述客户端浏览器相关信息</li>
+<li>可以用来区分 PC 端页面和移动端页面</li>
+</ul>
+</li>
+</ul>
+<h4 id="响应"><a href="#响应" class="headerlink" title="响应"></a>响应</h4><ul>
+<li>Content-Type<ul>
+<li>对应 Accept，从请求中的 Accept 支持的数据格式中选一种来返回</li>
+</ul>
+</li>
+<li>Content-Encoding<ul>
+<li>对应 Accept-Encoding，指服务端到底使用的是那种压缩方式</li>
+</ul>
+</li>
+<li>Content-Language<ul>
+<li>对应 Accept-Language</li>
+</ul>
+</li>
+</ul>
+<h4 id="form-表单中-enctype-数据类型"><a href="#form-表单中-enctype-数据类型" class="headerlink" title="form 表单中 enctype 数据类型"></a>form 表单中 enctype 数据类型</h4><ul>
+<li><code>application/x-www-form-urlencoded</code><ul>
+<li>key=value&amp;key=value 格式</li>
+</ul>
+</li>
+<li><code>multipart/form-data</code><ul>
+<li>用于提交文件</li>
+<li>multipart 表示请求是由多个部分组成（因为上传文件的时候文件不能以字符串形式提交，需要单独分出来）</li>
+<li>boundary 用来分隔不同部分</li>
+</ul>
+</li>
+<li><code>text/plain</code></li>
+</ul>
+<h3 id="HTTP-Redirect-重定向"><a href="#HTTP-Redirect-重定向" class="headerlink" title="HTTP Redirect 重定向"></a>HTTP Redirect 重定向</h3><ul>
+<li>302 暂时重定向<ul>
+<li>浏览器每次访问都要先去目标网址访问，再重定向到新的网址</li>
+</ul>
+</li>
+<li>301 永久重定向<ul>
+<li>当浏览器收到的 HTTP 状态码为 301 时，下次访问对应网址就直接调整到新的网址，不会再访问原网址</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTTP-CSP-内容安全策略"><a href="#HTTP-CSP-内容安全策略" class="headerlink" title="HTTP CSP 内容安全策略"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/CSP" target="_blank" rel="noopener">HTTP CSP 内容安全策略</a></h3><p>CSP Content-Security-Policy</p>
+<ul>
+<li>限制资源获取</li>
+<li>报告资源获取越权</li>
+</ul>
+<p>例子：</p>
+<ul>
+<li><code>Content-Security-Policy: default-src http: https:</code> 表示只允许通过 http、https 的方式加载资源</li>
+<li><code>&#39;Content-Security-Policy&#39;: &#39;default-src&#39; \&#39;self\&#39;; form-action\&#39;self\&#39; &#39;</code> 表示只能加载本域下的资源，只能向本域发送表单请求</li>
+</ul>
+<h2 id="HTTP2"><a href="#HTTP2" class="headerlink" title="HTTP2"></a>HTTP2</h2><p>HTTP 2.0 相比于 HTTP 1.X，可以说是大幅度提高了 web 的性能。</p>
+<p>HTTP2 采用<code>二进制格式传输</code>，取代了 HTTP1.x 的文本格式，二进制格式解析更高效。<br><code>多路复用</code>代替了 HTTP1.x 的序列和阻塞机制，所有的相同域名请求都通过同一个 TCP 连接并发完成。</p>
+<h3 id="二进制传输"><a href="#二进制传输" class="headerlink" title="二进制传输"></a>二进制传输</h3><p>HTTP 2.0 中所有加强性能的核心点在于此。在之前的 HTTP 版本中，我们是通过文本的方式传输数据。在 HTTP 2.0 中引入了新的编码机制，所有传输的数据都会被分割，并采用二进制格式编码。</p>
+<h3 id="多路复用"><a href="#多路复用" class="headerlink" title="多路复用"></a>多路复用</h3><p>HTTP1.x 中，并发多个请求需要多个 TCP 连接，浏览器为了控制资源会有 6-8 个 TCP 连接都限制。<br>HTTP2 中</p>
+<ul>
+<li>同域名下所有通信都在单个连接上完成，消除了因多个 TCP 连接而带来的延时和内存消耗。</li>
+<li>单个连接上可以并行交错的请求和响应，之间互不干扰</li>
+</ul>
+<p>在 HTTP 2.0 中，有两个非常重要的概念，分别是帧（frame）和流（stream）。</p>
+<p>帧代表着最小的数据单位，每个帧会标识出该帧属于哪个流，流也就是多个帧组成的数据流。</p>
+<p><strong>多路复用，就是在一个 TCP 连接中可以存在多条流。</strong> 换句话说，也就是可以发送多个请求，对端可以通过帧中的标识知道属于哪个请求。通过这个技术，可以避免 HTTP 旧版本中的队头阻塞问题，极大的提高传输性能。</p>
+<p><img src="/images/md/http2Connet.png" alt="http2"></p>
+<h3 id="Header-压缩"><a href="#Header-压缩" class="headerlink" title="Header 压缩"></a>Header 压缩</h3><p>在 HTTP 1.X 中，我们使用文本的形式传输 header，在 header 携带 cookie 的情况下，可能每次都需要重复传输几百到几千的字节。</p>
+<p>在 HTTP 2.0 中，使用了 HPACK 压缩格式对传输的 header 进行编码，减少了 header 的大小。并在两端维护了索引表，用于记录出现过的 header ，后面在传输过程中就可以传输已经记录过的 header 的键名，对端收到数据后就可以通过键名找到对应的值。</p>
+<h3 id="服务端-Push"><a href="#服务端-Push" class="headerlink" title="服务端 Push"></a>服务端 Push</h3><p>在 HTTP 2.0 中，服务端可以在客户端某个请求后，主动推送其他资源。</p>
+<p>可以想象以下情况，某些资源客户端是一定会请求的，这时就可以采取服务端 push 的技术，提前给客户端推送必要的资源，这样就可以相对减少一点延迟时间。当然在浏览器兼容的情况下你也可以使用 prefetch。</p>
+<h3 id="HTTP-首部"><a href="#HTTP-首部" class="headerlink" title="HTTP 首部"></a>HTTP 首部</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">通用字段</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Cache-Control</td>
+<td style="text-align:center">控制缓存的行为</td>
+</tr>
+<tr>
+<td style="text-align:center">Connection</td>
+<td style="text-align:center">浏览器想要优先使用的连接类型，比如 <code>keep-alive</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Date</td>
+<td style="text-align:center">创建报文时间</td>
+</tr>
+<tr>
+<td style="text-align:center">Pragma</td>
+<td style="text-align:center">报文指令</td>
+</tr>
+<tr>
+<td style="text-align:center">Via</td>
+<td style="text-align:center">代理服务器相关信息</td>
+</tr>
+<tr>
+<td style="text-align:center">Transfer-Encoding</td>
+<td style="text-align:center">传输编码方式</td>
+</tr>
+<tr>
+<td style="text-align:center">Upgrade</td>
+<td style="text-align:center">要求客户端升级协议</td>
+</tr>
+<tr>
+<td style="text-align:center">Warning</td>
+<td style="text-align:center">在内容中可能存在错误</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">请求字段</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Accept</td>
+<td style="text-align:center">能正确接收的媒体类型</td>
+</tr>
+<tr>
+<td style="text-align:center">Accept-Charset</td>
+<td style="text-align:center">能正确接收的字符集</td>
+</tr>
+<tr>
+<td style="text-align:center">Accept-Encoding</td>
+<td style="text-align:center">能正确接收的编码格式列表</td>
+</tr>
+<tr>
+<td style="text-align:center">Accept-Language</td>
+<td style="text-align:center">能正确接收的语言列表</td>
+</tr>
+<tr>
+<td style="text-align:center">Expect</td>
+<td style="text-align:center">期待服务端的指定行为</td>
+</tr>
+<tr>
+<td style="text-align:center">From</td>
+<td style="text-align:center">请求方邮箱地址</td>
+</tr>
+<tr>
+<td style="text-align:center">Host</td>
+<td style="text-align:center">服务器的域名</td>
+</tr>
+<tr>
+<td style="text-align:center">If-Match</td>
+<td style="text-align:center">两端资源标记比较</td>
+</tr>
+<tr>
+<td style="text-align:center">If-Modified-Since</td>
+<td style="text-align:center">本地资源未修改返回 304（比较时间）</td>
+</tr>
+<tr>
+<td style="text-align:center">If-None-Match</td>
+<td style="text-align:center">本地资源未修改返回 304（比较标记）</td>
+</tr>
+<tr>
+<td style="text-align:center">User-Agent</td>
+<td style="text-align:center">客户端信息</td>
+</tr>
+<tr>
+<td style="text-align:center">Max-Forwards</td>
+<td style="text-align:center">限制可被代理及网关转发的次数</td>
+</tr>
+<tr>
+<td style="text-align:center">Proxy-Authorization</td>
+<td style="text-align:center">向代理服务器发送验证信息</td>
+</tr>
+<tr>
+<td style="text-align:center">Range</td>
+<td style="text-align:center">请求某个内容的一部分</td>
+</tr>
+<tr>
+<td style="text-align:center">Referer</td>
+<td style="text-align:center">表示浏览器所访问的前一个页面</td>
+</tr>
+<tr>
+<td style="text-align:center">TE</td>
+<td style="text-align:center">传输编码方式</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">响应字段</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Accept-Ranges</td>
+<td style="text-align:center">是否支持某些种类的范围</td>
+</tr>
+<tr>
+<td style="text-align:center">Age</td>
+<td style="text-align:center">资源在代理缓存中存在的时间</td>
+</tr>
+<tr>
+<td style="text-align:center">ETag</td>
+<td style="text-align:center">资源标识</td>
+</tr>
+<tr>
+<td style="text-align:center">Location</td>
+<td style="text-align:center">客户端重定向到某个 URL</td>
+</tr>
+<tr>
+<td style="text-align:center">Proxy-Authenticate</td>
+<td style="text-align:center">向代理服务器发送验证信息</td>
+</tr>
+<tr>
+<td style="text-align:center">Server</td>
+<td style="text-align:center">服务器名字</td>
+</tr>
+<tr>
+<td style="text-align:center">WWW-Authenticate</td>
+<td style="text-align:center">获取资源需要的验证信息</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">实体字段</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Allow</td>
+<td style="text-align:center">资源的正确请求方式</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-Encoding</td>
+<td style="text-align:center">内容的编码格式</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-Language</td>
+<td style="text-align:center">内容使用的语言</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-Length</td>
+<td style="text-align:center">request body 长度</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-Location</td>
+<td style="text-align:center">返回数据的备用地址</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-MD5</td>
+<td style="text-align:center">Base64 加密格式的内容 MD5 检验值</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-Range</td>
+<td style="text-align:center">内容的位置范围</td>
+</tr>
+<tr>
+<td style="text-align:center">Content-Type</td>
+<td style="text-align:center">内容的媒体类型</td>
+</tr>
+<tr>
+<td style="text-align:center">Expires</td>
+<td style="text-align:center">内容的过期时间</td>
+</tr>
+<tr>
+<td style="text-align:center">Last_modified</td>
+<td style="text-align:center">内容的最后修改时间</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+  <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="https://guessdeveloper.github.io/"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+</article>
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    
+  <a href="/2017/11/14/浅谈TCP三次握手四次挥手/" id="post_nav-newer" class="post-nav-content prev-content">
+      新篇
+  </a>
+    
+
+
+  <!-- Next Nav -->
+    
+  <a href="/2017/11/06/前端网络安全/" id="post_nav-older" class="post-nav-content next-content">
+      旧篇
+  </a>
+    
+</nav>
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTTP"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTTP</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-协议的特点"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">HTTP 协议的特点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#请求报文"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">请求报文</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#响应报文"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">响应报文</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-方法"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">HTTP 方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Post-和-Get-的区别"><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">Post 和 Get 的区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#常见状态码"><span class="post-toc-number">1.0.6.</span> <span class="post-toc-text">常见状态码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1XX-指示信息"><span class="post-toc-number">1.0.6.1.</span> <span class="post-toc-text">1XX 指示信息</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2XX-成功"><span class="post-toc-number">1.0.6.2.</span> <span class="post-toc-text">2XX 成功</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3XX-重定向"><span class="post-toc-number">1.0.6.3.</span> <span class="post-toc-text">3XX 重定向</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4XX-客户端错误"><span class="post-toc-number">1.0.6.4.</span> <span class="post-toc-text">4XX 客户端错误</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5XX-服务器错误"><span class="post-toc-number">1.0.6.5.</span> <span class="post-toc-text">5XX 服务器错误</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-持久连接（HTTP1-1-支持）"><span class="post-toc-number">1.0.7.</span> <span class="post-toc-text">HTTP 持久连接（HTTP1.1 支持）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-管线化-（HTTP1-1-支持）"><span class="post-toc-number">1.0.8.</span> <span class="post-toc-text">HTTP 管线化 （HTTP1.1 支持）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-数据协商"><span class="post-toc-number">1.0.9.</span> <span class="post-toc-text">HTTP 数据协商</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#请求"><span class="post-toc-number">1.0.9.1.</span> <span class="post-toc-text">请求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#响应"><span class="post-toc-number">1.0.9.2.</span> <span class="post-toc-text">响应</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#form-表单中-enctype-数据类型"><span class="post-toc-number">1.0.9.3.</span> <span class="post-toc-text">form 表单中 enctype 数据类型</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-Redirect-重定向"><span class="post-toc-number">1.0.10.</span> <span class="post-toc-text">HTTP Redirect 重定向</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-CSP-内容安全策略"><span class="post-toc-number">1.0.11.</span> <span class="post-toc-text">HTTP CSP 内容安全策略</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTTP2"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">HTTP2</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二进制传输"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">二进制传输</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#多路复用"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">多路复用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Header-压缩"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">Header 压缩</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#服务端-Push"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">服务端 Push</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HTTP-首部"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">HTTP 首部</span></a></li></ol></li></ol>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+<script type="text/javascript">
+    menu();
+</script>
+  </div>
+</div>
+<div id="bottom-outer">
+  <div id="bottom-inner">
+    <a id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
+
+
+<p>Copyright ©  2017  月影</p>
+<!--<p >Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> & Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>-->
+<p style="font-size: 10px" id="footer-times" data-time="1/1/2017 00:00:00"></p>
+<script>
+    var beginTime=document.getElementById("footer-times").dataset.time
+    function show_date_time(){
+        var span=document.getElementById("footer-times")
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date(beginTime);//初始日期
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=Math.floor(e_hrsold);
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=Math.floor((e_hrsold-hrsold)*60);
+        seconds=Math.floor((e_minsold-minsold)*60);
+        span.innerHTML="本站已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    }
+    show_date_time();
+</script>
+
+<div class="post-music">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=498861&auto=0&height=66"></iframe>
+</div>
+  </div>
+</div>
+
+<!--影集界面需要的资源-->
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/materialize.min.js"></script>
+
+<script src="/js/main.min.js"></script>
+
+
+<script>
+    NProgress.start();
+    NProgress.done();
+    lazy();
+    links();
+    window.onpopstate = menu();
+    //pjax操作
+    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
+        .on('pjax:end', () => {
+            dowmdiv();
+            lazy();
+            toc();
+            links();
+            menu();
+        });
+</script>
+
+</body>
+</html>

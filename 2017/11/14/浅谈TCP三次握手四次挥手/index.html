@@ -80,7 +80,7 @@
 
 <ul class="dropdown-menu dropdown">
     <li class="nav-dropdown-list">
-        <a class="archive-link" href="/archives/2021/06/">June 2021<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/10/">October 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">3</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
+        <a class="archive-link" href="/archives/2021/06/">June 2021<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/10/">October 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/10/">October 2018<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">4</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
     </li>
 </ul>
 <!--categories-->
@@ -93,7 +93,7 @@
 
 <ul class="dropdown-menu dropdown">
     <li class="nav-dropdown-list">
-        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/网络/">网络<span class="category-count">5</span></a>
+        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/网络/">网络<span class="category-count">8</span></a>
     </li>
 </ul>
 <!--tags-->
@@ -120,7 +120,7 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-11.png)">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-18.png)">
   <h2>浅谈TCP（三次握手四次挥手）</h2>
     
   <p>作者:Wang Ying &nbsp&nbsp 发布于:<time datetime="2017-11-14T08:44:29.000Z">
@@ -133,7 +133,7 @@
   <p>在浏览器网址输入点击回车后有哪些操作？相信很多同学在大厂面试的时候都会问这个问题，那这个问题往往就绕不开TCP链接。</p>
 <h4 id="为什么会有TCP？"><a href="#为什么会有TCP？" class="headerlink" title="为什么会有TCP？"></a>为什么会有TCP？</h4><p>在世界上各地，各种各样的电脑运行着各自不同的操作系统为大家服务，这些电脑在表达同一种信息的时候所使用的方法是千差万别。就好像圣经中上帝打乱了各地人的口音，让他们无法合作一样。计算机使用者意识到，计算机只是单兵作战并不会发挥太大的作用。只有把它们联合起来，电脑才会发挥出它最大的潜力。于是人们就想方设法的用电线把电脑连接到了一起。</p>
 <p>但是简单的连到一起是远远不够的，就好像语言不同的两个人互相见了面，完全不能交流信息。因而他们需要定义一些共通的东西来进行交流，TCP/IP就是为此而生。TCP/IP不是一个协议，而是一个协议族的统称。里面包括了IP协议，IMCP协议，TCP协议，以及我们更加熟悉的http、ftp、pop3协议等等。电脑有了这些，就好像学会了外语一样，就可以和其他的计算机终端做自由的交流了。</p>
-<h4 id="TCP-IP协议分层"><a href="#TCP-IP协议分层" class="headerlink" title="TCP/IP协议分层"></a>TCP/IP协议分层</h4><p><img src="https://img2018.cnblogs.com/blog/1330623/201811/1330623-20181111094255969-906399626.png" alt="TCP分层2.jpg"></p>
+<h4 id="TCP-IP协议分层"><a href="#TCP-IP协议分层" class="headerlink" title="TCP/IP协议分层"></a>TCP/IP协议分层</h4><p><img src="/images/md/TCP.png" alt="TCP分层2.jpg"></p>
 <h6 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h6><p>向用户提供一组常用的应用程序，比如电子邮件、文件传输访问、远程登录等。远程登录TELNET使用TELNET协议提供在网络其它主机上注册的接口。TELNET会话提供了基于字符的虚拟终端。文件传输访问FTP使用FTP协议来提供网络内机器间的文件拷贝功能。</p>
 <h6 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h6><p>提供应用程序间的通信。其功能包括：一、格式化信息流；二、提供可靠传输。为实现后者，传输层协议规定接收端必须发回确认，并且假如分组丢失，必须重新发送。</p>
 <h6 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h6>
@@ -178,7 +178,7 @@
 
   <!-- Next Nav -->
     
-  <a href="/2017/11/06/前端网络安全/" id="post_nav-older" class="post-nav-content next-content">
+  <a href="/2017/11/14/什么是http/" id="post_nav-older" class="post-nav-content next-content">
       旧篇
   </a>
     
@@ -225,6 +225,9 @@
     show_date_time();
 </script>
 
+<div class="post-music">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=498861&auto=0&height=66"></iframe>
+</div>
   </div>
 </div>
 

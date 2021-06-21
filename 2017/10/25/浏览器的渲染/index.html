@@ -80,7 +80,7 @@
 
 <ul class="dropdown-menu dropdown">
     <li class="nav-dropdown-list">
-        <a class="archive-link" href="/archives/2021/06/">June 2021<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/10/">October 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">3</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
+        <a class="archive-link" href="/archives/2021/06/">June 2021<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/10/">October 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/08/">August 2020<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2020/04/">April 2020<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2019/12/">December 2019<span class="archive-count">1</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2018/10/">October 2018<span class="archive-count">2</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/11/">November 2017<span class="archive-count">4</span></a></li><li class="nav-dropdown-list"><a class="archive-link" href="/archives/2017/10/">October 2017<span class="archive-count">4</span></a>
     </li>
 </ul>
 <!--categories-->
@@ -93,7 +93,7 @@
 
 <ul class="dropdown-menu dropdown">
     <li class="nav-dropdown-list">
-        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/网络/">网络<span class="category-count">5</span></a>
+        <a class="category-link" href="/categories/css/">css<span class="category-count">1</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/js/">js<span class="category-count">2</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/vue/">vue<span class="category-count">3</span></a></li><li class="nav-dropdown-list"><a class="category-link" href="/categories/网络/">网络<span class="category-count">8</span></a>
     </li>
 </ul>
 <!--tags-->
@@ -120,7 +120,7 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-2.png)">
+  <div class="post-page-title" style="background-color:#26A69A;background-image:url(/images/random/vateral-14.png)">
   <h2>浏览器的渲染</h2>
     
   <p>作者:Wang Ying &nbsp&nbsp 发布于:<time datetime="2017-10-25T09:29:56.000Z">
@@ -130,46 +130,96 @@
     
   </div>
   <div class="post-page-content">
-  <p>看了一篇文章，说的是浏览器的渲染的过程及其原理，前端工作中许多工作都在对页面进行优化，每个优化的目的不同所需要的方案也不一样。所以了解浏览器渲染的原理及过程对一个前端来说重要性可想而知。</p>
-<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1508934122586&amp;di=68ff7e230d4561ec14ea460ae3231955&amp;imgtype=0&amp;src=http%3A%2F%2Fstatic.leiphone.com%2Fuploads%2F2011%2F06%2Fcommon-web-browsers-and-browser1.jpeg" alt="浏览器"></p>
-<h5 id="关键渲染路径"><a href="#关键渲染路径" class="headerlink" title="关键渲染路径"></a>关键渲染路径</h5><blockquote>
-<p>关键渲染路径(Critical Rendering Path) 是指与用户当前操作相关的内容。例如用户刚刚打开一个界面，首屏的显示就是当前用户操作相关的内容，具体就是浏览器收到HTML、CSS和JavaScript等资源对其进行处理从而渲染出Web页面。<br>了解浏览器的渲染也是为了优化关键渲染路径。优化是针对具体问题的解决方案。所以优化没有准确的规定。</p>
-</blockquote>
-<h5 id="浏览器渲染页面的过程"><a href="#浏览器渲染页面的过程" class="headerlink" title="浏览器渲染页面的过程"></a>浏览器渲染页面的过程</h5><p>浏览器请求、加载、渲染一个页面总共做了5件事情。</p>
+  <p><a href="https://segmentfault.com/a/1190000006879700" target="_blank" rel="noopener">参考链接</a></p>
+<p><img src="/images/输入URL后.png" alt="输入URL后.png"></p>
+<ul>
+<li>判断是否需要跳转(301)</li>
+<li>从浏览器中读取缓存</li>
+<li>DNS解析</li>
+<li>TCP连接</li>
+<li>HTTP请求发出</li>
+<li>服务端处理请求，HTTP响应返回</li>
+<li>浏览器拿到响应数据，解析响应内内容，把解析结果展示给用户</li>
+</ul>
 <ol>
-<li>DNS查询</li>
-<li>TCP链接</li>
-<li>HTTP请求即响应</li>
-<li>服务器响应</li>
-<li>客户端渲染</li>
+<li>在浏览器地址栏输入URL</li>
+<li>判断是否有永久重定向(301)<ol>
+<li>如果有，直接跳转到对应URL</li>
 </ol>
-<p>我们今天主要讨论的是客户端渲染，而其又分为5步。</p>
-<ol>
-<li>处理HTML标记并构建DOM树。</li>
-<li>处理CSS标记并构建CSSOM树。</li>
-<li>将DOM与CSSOM合并成一个渲染树。</li>
-<li>根据渲染树来布局，移计算每个节点的几何信息。</li>
-<li>将各个节点绘制在屏幕上。</li>
+</li>
+<li>浏览器查看资源是否有<strong>强缓存</strong>，有则直接使用，如果是<strong>协商缓存</strong>则需要到服务器进行校验资源是否可用<ol>
+<li>检验新鲜通常有两个HTTP头进行控制<code>Expires</code>和<code>Cache-Control</code>：<ul>
+<li>HTTP1.0提供Expires，值为一个绝对时间表示缓存新鲜日期</li>
+<li>HTTP1.1增加了Cache-Control: max-age=,值为以秒为单位的最大新鲜时间</li>
+</ul>
+</li>
 </ol>
-<p>但是呢，这5步不是一次性顺序完成的。如果有DOM或者CSSOM被修改，以上过程需要重复执行，这样才能计算出哪些像素需要在屏幕上进行重新渲染。在实际中，css与JavaScript往往多次修改DOM和CSSOM。</p>
-<h5 id="阻塞渲染：CSS与JavaScript"><a href="#阻塞渲染：CSS与JavaScript" class="headerlink" title="阻塞渲染：CSS与JavaScript"></a>阻塞渲染：CSS与JavaScript</h5><p>提到资源阻塞，我们要明白一点，现在的浏览器是并行加载资源的。例如当HTML解析器（HTML Parser）被脚步阻塞时，解析器虽然会停止构建DOM,但仍会识别该脚步后面的资源，并进行预加载。<br>同时，由于下面两点：</p>
-<ol>
-<li>默认情况下，CSS被视为阻塞渲染的资源，这意味着浏览器将不会渲染任何已处理的内容，直至CSSOM构建完毕。</li>
-<li>JavaScript不仅可以读取和修改DOM属性，还可以读取和修改CSSOM属性。</li>
+</li>
+<li>浏览器<strong>解析URL</strong>获取协议，主机，端口，path</li>
+<li>浏览器<strong>组装一个HTTP（GET）请求报文</strong></li>
+<li><strong>DNS解析</strong>，查找过程如下：<ol>
+<li>浏览器缓存</li>
+<li>本机缓存</li>
+<li>hosts文件</li>
+<li>路由器缓存</li>
+<li>ISP DNS缓存</li>
+<li>DNS查询（递归查询 / 迭代查询）</li>
 </ol>
-<p>存在阻塞的CSS资源时，浏览器会延迟javascript的执行和DOM构建。另外：</p>
-<ol>
-<li>当浏览器遇到一个script标签时,DOM构建将暂停，直至脚步完成执行。</li>
-<li>JavaScript可以查询和修改DOM与CSSOM。</li>
-<li>CSSOM构建时，JavaScript执行将暂停，直至CSSOM就绪。</li>
+</li>
+<li><strong>端口建立TCP链接</strong>，三次握手如下：<ol>
+<li>客户端发送一个TCP的<strong>SYN=1，Seq=X</strong>的包到服务器端口</li>
+<li>服务器发回<strong>SYN=1， ACK=X+1， Seq=Y</strong>的响应包</li>
+<li>客户端发送<strong>ACK=Y+1， Seq=Z</strong></li>
 </ol>
-<p>所以，script的位置很重要。实际中，遵循以下规则。</p>
-<ol>
-<li>CSS优先：引入顺序上，CSS资源优先于JavaScript资源。</li>
-<li>JavaScript尽量减少DOM操作。</li>
+</li>
+<li>TCP链接建立后<strong>发送HTTP请求</strong></li>
+<li>服务器接受请求并解析，将请求转发到服务程序，如虚拟主机使用HTTP Host头部判断请求的服务程序</li>
+<li>服务器检查<strong>HTTP请求头是否包含缓存验证信息</strong>如果验证缓存新鲜，返回<strong>304</strong>等对应状态码</li>
+<li>处理程序读取完整请求并准备HTTP响应，可能需要查询数据库等操作</li>
+<li>服务器将<strong>响应报文通过TCP连接发送回浏览器</strong></li>
+<li>浏览器接收HTTP响应，然后根据情况选择<strong>关闭TCP连接或者保留重用，关闭TCP连接的四次挥手如下</strong>：<ol>
+<li>主动方发送<strong>Fin=1， Ack=Z， Seq= X</strong>报文</li>
+<li>被动方发送<strong>ACK=X+1， Seq=Z</strong>报文</li>
+<li>被动方发送<strong>Fin=1， ACK=X， Seq=Y</strong>报文</li>
+<li>主动方发送<strong>ACK=Y， Seq=X</strong>报文</li>
 </ol>
-<h5 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;p&#123;color:red;&#125;&lt;/style&gt;</span><br><span class="line">&lt;link rel=&apos;stylesheet&apos; href=&apos;index.css&apos;&gt;</span><br></pre></td></tr></table></figure>
-<p>这样的link标签会被视为阻塞渲染的资源，浏览器会优先处理这些CSS资源，直至CSSOM构建完成。<br>渲染树（Render-Tree）的关键渲染路径中，要求同时具有CSSOM和DOM,之后才构建渲染树。也就是说CSS和HTML都是阻塞资源，但是HTML是必须的，所以我们想做优化只能从CSS上想办法。</p>
+</li>
+<li>浏览器检查响应状态吗：是否为1XX，3XX， 4XX， 5XX，这些情况处理与2XX不同</li>
+<li>如果资源可缓存，<strong>进行缓存</strong></li>
+<li>对响应进行<strong>解码</strong>（例如gzip压缩）</li>
+<li>根据资源类型决定如何处理（假设资源为HTML文档）</li>
+<li><strong>解析HTML文档，构件DOM树，下载资源，构造CSSOM树，执行js脚本</strong>，这些操作没有严格的先后顺序，以下分别解释</li>
+<li><strong>构建DOM树</strong>：<ol>
+<li><strong>Tokenizing</strong>：根据HTML规范将字符流解析为标记</li>
+<li><strong>Lexing</strong>：词法分析将标记转换为对象并定义属性和规则</li>
+<li><strong>DOM construction</strong>：根据HTML标记关系将对象组成DOM树</li>
+</ol>
+</li>
+<li>解析过程中遇到图片、样式表、js文件，<strong>启动下载</strong></li>
+<li>构建<strong>CSSOM树</strong>：<ol>
+<li><strong>Tokenizing</strong>：字符流转换为标记流</li>
+<li><strong>Node</strong>：根据标记创建节点</li>
+<li><strong>CSSOM</strong>：节点创建CSSOM树</li>
+</ol>
+</li>
+<li><strong><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction" target="_blank" rel="noopener">根据DOM树和CSSOM树构建渲染树</a></strong>:<ol>
+<li>从DOM树的根节点遍历所有<strong>可见节点</strong>，不可见节点包括：1）<code>script</code>,<code>meta</code>这样本身不可见的标签。2)被css隐藏的节点，如<code>display: none</code></li>
+<li>对每一个可见节点，找到恰当的CSSOM规则并应用</li>
+<li>发布可视节点的内容和计算样式</li>
+</ol>
+</li>
+<li><strong>js解析如下</strong>：<ol>
+<li>浏览器创建Document对象并解析HTML，将解析到的元素和文本节点添加到文档中，此时<strong>document.readystate为loading</strong></li>
+<li>HTML解析器遇到<strong>没有async和defer的script时</strong>，将他们添加到文档中，然后执行行内或外部脚本。这些脚本会同步执行，并且在脚本下载和执行时解析器会暂停。这样就可以用document.write()把文本插入到输入流中。<strong>同步脚本经常简单定义函数和注册事件处理程序，他们可以遍历和操作script和他们之前的文档内容</strong></li>
+<li>当解析器遇到设置了<strong>async</strong>属性的script时，开始下载脚本并继续解析文档。脚本会在它<strong>下载完成后尽快执行</strong>，但是<strong>解析器不会停下来等它下载</strong>。异步脚本<strong>禁止使用document.write()</strong>，它们可以访问自己script和之前的文档元素</li>
+<li>当文档完成解析，document.readState变成interactive</li>
+<li>所有<strong>defer</strong>脚本会<strong>按照在文档出现的顺序执行</strong>，延迟脚本<strong>能访问完整文档树</strong>，禁止使用document.write()</li>
+<li>浏览器<strong>在Document对象上触发DOMContentLoaded事件</strong></li>
+<li>此时文档完全解析完成，浏览器可能还在等待如图片等内容加载，等这些<strong>内容完成载入并且所有异步脚本完成载入和执行</strong>，document.readState变为complete,window触发load事件</li>
+</ol>
+</li>
+<li><strong>显示页面</strong>（HTML解析过程中会逐步显示页面）</li>
+</ol>
 
   </div>
   <!--评论块-->
@@ -220,7 +270,7 @@
 <div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
 <div class="post-toc-none"><p>(无)</p></div>
 <div class="post-toc-box">
-    <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#关键渲染路径"><span class="post-toc-number">1.</span> <span class="post-toc-text">关键渲染路径</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#浏览器渲染页面的过程"><span class="post-toc-number">2.</span> <span class="post-toc-text">浏览器渲染页面的过程</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#阻塞渲染：CSS与JavaScript"><span class="post-toc-number">3.</span> <span class="post-toc-text">阻塞渲染：CSS与JavaScript</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#CSS"><span class="post-toc-number">4.</span> <span class="post-toc-text">CSS</span></a></li></ol>
+    
 </div>
 <!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
 <script type="text/javascript">
@@ -259,6 +309,9 @@
     show_date_time();
 </script>
 
+<div class="post-music">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=498861&auto=0&height=66"></iframe>
+</div>
   </div>
 </div>
 
